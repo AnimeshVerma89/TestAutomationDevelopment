@@ -5,9 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class MyStorePage {
+public class MyStorePage extends BasePage {
 	
-	public WebDriver driver =null;
 	public MyStorePage (WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver	, this);
@@ -27,5 +26,6 @@ public class MyStorePage {
 
 	public void clickSignInLink() {
 		getSignInLink().click();
+		
 	}
 }
