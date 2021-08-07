@@ -1,9 +1,13 @@
 package com.automation.stepdefinitions;
 
+import static org.junit.Assert.assertEquals;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
+import com.automation.pageobject.LoginPage;
+import com.automation.pageobject.MyAccountPage;
 import com.automation.pageobject.MyStorePage;
 
 import cucumber.api.java.en.*;
@@ -11,6 +15,8 @@ import cucumber.api.java.en.*;
 public class LoginSteps {
 	public WebDriver driver = null;
 	MyStorePage myStorePage = null;
+	LoginPage loginPg = null;
+	MyAccountPage myAcctPg =null;
 	
 	@Given("User has launched chrome browser")
 	public void user_has_launched_chrome_browser() {
@@ -19,7 +25,6 @@ public class LoginSteps {
 	    // Instantiate a ChromeDriver class.       
 	     driver=new ChromeDriver();
 	     myStorePage = new MyStorePage(driver);
-	    
 	}
 
 	@When("User navigates to the Application URL {string}")
@@ -39,31 +44,40 @@ public class LoginSteps {
 	@Then("Navigates to {string} Page")
 	public void navigates_to_Page(String string) {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+		 Assert.assertEquals(driver.getTitle(), string, "User navigates to Incorrect page");
 	}
 
 	@When("Enters username as {string} and password as {string}")
 	public void enters_username_as_and_password_as(String string, String string2) {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+		loginPg = new LoginPage(driver);
+	    loginPg.enterUsername(string);
+	    loginPg.enterPassword(string2);
 	}
 
 	@When("Clicks on SignIn button on the {string} page")
 	public void clicks_on_SignIn_button_on_the_page(String string) {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+	    loginPg.clickSignInButton();
 	}
 
-	@Then("User validates Account Information page")
-	public void user_validates_Account_Information_page() {
+	@Then("User validates {string} Account Information page")
+	public void user_validates_Account_Information_page(String string) {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+		myAcctPg = new MyAccountPage(driver);
+		Assert.assertEquals(myAcctPg.getUserProfileName(), string, "Incorrect User Profile Name");
 	}
 
 	@When("Clicks Signout link on the {string} page")
 	public void clicks_Signout_link_on_the_page(String string) {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+	    myAcctPg.clickSignOut();
+	}
+
+	@Then("Quit Launched Browser")
+	public void quit_Launched_Browser() {
+	    // Write code here that turns the phrase above into concrete actions
+	    driver.quit();
 	}
 
 

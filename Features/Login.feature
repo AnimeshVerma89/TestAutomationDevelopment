@@ -18,15 +18,34 @@
 #Sample Feature Definition Template
 Feature: Login in to the Application
 
-  Scenario: Login in to the application using valid credentials
-    Given User has launched chrome browser
+  #Scenario: Login in to the application using valid credentials
+    #Given User has launched chrome browser
+    #When User navigates to the Application URL "http://automationpractice.com/index.php"
+    #And Clicks Signin link on the "My Store" page 
+    #Then Navigates to "Login - My Store" Page 
+    #When Enters username as "testautomation2022@gmail.com" and password as "Password@123"
+    #And Clicks on SignIn button on the "Login - My Store" page
+    #Then Navigates to "My account - My Store" Page
+    #And User validates "test demo" Account Information page
+    #When Clicks Signout link on the "My account - My Store" page
+    #Then Navigates to "Login - My Store" Page
+    #And Quit Launched Browser
+
+
+  Scenario Outline:
+  Given User has launched chrome browser
     When User navigates to the Application URL "http://automationpractice.com/index.php"
     And Clicks Signin link on the "My Store" page 
     Then Navigates to "Login - My Store" Page 
-    When Enters username as "testautomation2023@gmail.com" and password as "Password@123"
+    When Enters username as "<Username>" and password as "<Password>"
     And Clicks on SignIn button on the "Login - My Store" page
     Then Navigates to "My account - My Store" Page
-    And User validates Account Information page
+    And User validates "test demo" Account Information page
     When Clicks Signout link on the "My account - My Store" page
     Then Navigates to "Login - My Store" Page
-
+    And Quit Launched Browser
+    
+    Examples:
+    |Username										|	Password|
+    |testautomation2022@gmail.com	|Password@123|	
+    |testautomation2023@gmail.com	|Password@123|	
