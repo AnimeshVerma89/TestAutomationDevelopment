@@ -6,32 +6,34 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
+import com.automation.pageobject.BasePage;
 import com.automation.pageobject.LoginPage;
 import com.automation.pageobject.MyAccountPage;
 import com.automation.pageobject.MyStorePage;
+import com.automation.utility.ConfigureProperties;
 
 import cucumber.api.java.en.*;
 
-public class LoginSteps {
-	public WebDriver driver = null;
+public class LoginSteps extends BasePage{
+	
 	MyStorePage myStorePage = null;
 	LoginPage loginPg = null;
 	MyAccountPage myAcctPg =null;
+	String url ="";
 	
-	@Given("User has launched chrome browser")
-	public void user_has_launched_chrome_browser() {
-	    // Write code here that turns the phrase above into concrete actions
-		System.setProperty("webdriver.chrome.driver","D:\\MyWorkspace\\HybridAutomationFramework\\Drivers\\chromedriver.exe");  
-	    // Instantiate a ChromeDriver class.       
-	     driver=new ChromeDriver();
+	
+	@Given("User has launched browser")
+	public void user_has_launched_browser() {
+	    // Write code here that turns the phrase above into concrete action
+	     openBrowser();
 	     myStorePage = new MyStorePage(driver);
 	}
 
-	@When("User navigates to the Application URL {string}")
-	public void user_navigates_to_the_Application_URL(String string) {
+	@When("User navigates to the Application URL")
+	public void user_navigates_to_the_Application_URL() {
 	    // Write code here that turns the phrase above into concrete actions
-		driver.manage().window().maximize();
-	    driver.get(string);
+		url = ConfigureProperties.readProperties("Base_URL");
+	    driver.get(url);
 	    Assert.assertEquals(driver.getTitle(), "My Store", "User navigates to Incorrect page");
 	}
 
@@ -77,7 +79,7 @@ public class LoginSteps {
 	@Then("Quit Launched Browser")
 	public void quit_Launched_Browser() {
 	    // Write code here that turns the phrase above into concrete actions
-	    driver.quit();
+	    closeBrowser();
 	}
 
 

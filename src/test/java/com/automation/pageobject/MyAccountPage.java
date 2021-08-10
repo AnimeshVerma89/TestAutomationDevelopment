@@ -56,6 +56,7 @@ public class MyAccountPage extends BasePage{
 	}
 	
 	public void clickSignOut() {
+		explicityWaitForElement(getSignOutLinkWb(), explicitWaitTime);
 		getSignOutLinkWb().click();
 	}
 }
