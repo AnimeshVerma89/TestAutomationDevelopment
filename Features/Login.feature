@@ -32,9 +32,9 @@ Feature: Login in to the Application
     #And Quit Launched Browser
 
 
-  Scenario Outline:
-  Given User has launched chrome browser
-    When User navigates to the Application URL "http://automationpractice.com/index.php"
+    Scenario Outline:
+    Given User has launched browser
+    When User navigates to the Application URL
     And Clicks Signin link on the "My Store" page 
     Then Navigates to "Login - My Store" Page 
     When Enters username as "<Username>" and password as "<Password>"

@@ -25,6 +25,7 @@ public class MyStorePage extends BasePage {
 	}
 
 	public void clickSignInLink() {
+		explicityWaitForElement(getSignInLink(), explicitWaitTime);
 		getSignInLink().click();
 		
 	}
