@@ -14,6 +14,7 @@ import org.testng.annotations.BeforeTest;
 import com.automation.utility.ConfigureProperties;
 
 import cucumber.api.java.Before;
+import io.cucumber.core.logging.Logger;
 
 
 
@@ -27,6 +28,7 @@ public class BasePage {
 	WebDriverWait explicitWait =null;
 	public long explicitWaitTime = Long.parseLong(ConfigureProperties.readProperties("Explicit_Wait"));
 	public long implicitWaitTime =Long.parseLong(ConfigureProperties.readProperties("Implicit_Wait"));
+	public static org.apache.log4j.Logger logger;
 	
 	
 	public void openBrowser() {
