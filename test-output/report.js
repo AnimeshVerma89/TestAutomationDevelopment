@@ -10,11 +10,11 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "User has launched chrome browser",
+  "name": "User has launched browser",
   "keyword": "Given "
 });
 formatter.step({
-  "name": "User navigates to the Application URL \"http://automationpractice.com/index.php\"",
+  "name": "User navigates to the Application URL",
   "keyword": "When "
 });
 formatter.step({
@@ -84,21 +84,21 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "User has launched chrome browser",
+  "name": "User has launched browser",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "LoginSteps.user_has_launched_chrome_browser()"
+  "location": "Steps.user_has_launched_browser()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User navigates to the Application URL \"http://automationpractice.com/index.php\"",
+  "name": "User navigates to the Application URL",
   "keyword": "When "
 });
 formatter.match({
-  "location": "LoginSteps.user_navigates_to_the_Application_URL(String)"
+  "location": "Steps.user_navigates_to_the_Application_URL()"
 });
 formatter.result({
   "status": "passed"
@@ -108,7 +108,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "LoginSteps.clicks_Signin_link_on_the_page(String)"
+  "location": "Steps.clicks_Signin_link_on_the_page(String)"
 });
 formatter.result({
   "status": "passed"
@@ -118,7 +118,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginSteps.navigates_to_Page(String)"
+  "location": "Steps.navigates_to_Page(String)"
 });
 formatter.result({
   "status": "passed"
@@ -128,7 +128,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "LoginSteps.enters_username_as_and_password_as(String,String)"
+  "location": "Steps.enters_username_as_and_password_as(String,String)"
 });
 formatter.result({
   "status": "passed"
@@ -138,7 +138,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "LoginSteps.clicks_on_SignIn_button_on_the_page(String)"
+  "location": "Steps.clicks_on_SignIn_button_on_the_page(String)"
 });
 formatter.result({
   "status": "passed"
@@ -148,7 +148,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginSteps.navigates_to_Page(String)"
+  "location": "Steps.navigates_to_Page(String)"
 });
 formatter.result({
   "status": "passed"
@@ -158,7 +158,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "LoginSteps.user_validates_Account_Information_page(String)"
+  "location": "Steps.user_validates_Account_Information_page(String)"
 });
 formatter.result({
   "status": "passed"
@@ -168,7 +168,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "LoginSteps.clicks_Signout_link_on_the_page(String)"
+  "location": "Steps.clicks_Signout_link_on_the_page(String)"
 });
 formatter.result({
   "status": "passed"
@@ -178,7 +178,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginSteps.navigates_to_Page(String)"
+  "location": "Steps.navigates_to_Page(String)"
 });
 formatter.result({
   "status": "passed"
@@ -188,7 +188,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "LoginSteps.quit_Launched_Browser()"
+  "location": "Steps.quit_Launched_Browser()"
 });
 formatter.result({
   "status": "passed"
@@ -199,21 +199,21 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "User has launched chrome browser",
+  "name": "User has launched browser",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "LoginSteps.user_has_launched_chrome_browser()"
+  "location": "Steps.user_has_launched_browser()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User navigates to the Application URL \"http://automationpractice.com/index.php\"",
+  "name": "User navigates to the Application URL",
   "keyword": "When "
 });
 formatter.match({
-  "location": "LoginSteps.user_navigates_to_the_Application_URL(String)"
+  "location": "Steps.user_navigates_to_the_Application_URL()"
 });
 formatter.result({
   "status": "passed"
@@ -223,7 +223,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "LoginSteps.clicks_Signin_link_on_the_page(String)"
+  "location": "Steps.clicks_Signin_link_on_the_page(String)"
 });
 formatter.result({
   "status": "passed"
@@ -233,7 +233,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginSteps.navigates_to_Page(String)"
+  "location": "Steps.navigates_to_Page(String)"
 });
 formatter.result({
   "status": "passed"
@@ -243,7 +243,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "LoginSteps.enters_username_as_and_password_as(String,String)"
+  "location": "Steps.enters_username_as_and_password_as(String,String)"
 });
 formatter.result({
   "status": "passed"
@@ -253,7 +253,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "LoginSteps.clicks_on_SignIn_button_on_the_page(String)"
+  "location": "Steps.clicks_on_SignIn_button_on_the_page(String)"
 });
 formatter.result({
   "status": "passed"
@@ -263,7 +263,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginSteps.navigates_to_Page(String)"
+  "location": "Steps.navigates_to_Page(String)"
 });
 formatter.result({
   "status": "passed"
@@ -273,7 +273,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "LoginSteps.user_validates_Account_Information_page(String)"
+  "location": "Steps.user_validates_Account_Information_page(String)"
 });
 formatter.result({
   "status": "passed"
@@ -283,7 +283,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "LoginSteps.clicks_Signout_link_on_the_page(String)"
+  "location": "Steps.clicks_Signout_link_on_the_page(String)"
 });
 formatter.result({
   "status": "passed"
@@ -293,7 +293,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginSteps.navigates_to_Page(String)"
+  "location": "Steps.navigates_to_Page(String)"
 });
 formatter.result({
   "status": "passed"
@@ -303,7 +303,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "LoginSteps.quit_Launched_Browser()"
+  "location": "Steps.quit_Launched_Browser()"
 });
 formatter.result({
   "status": "passed"

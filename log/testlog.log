@@ -1,0 +1,24 @@
+2021-08-20 20:35:10 INFO  Steps:33 - *********Opening Blank Browser*********
+2021-08-20 20:35:17 INFO  Steps:43 - *********Navigating to Application URL*********
+2021-08-20 20:35:27 INFO  Steps:51 - *********Clicking SignIn Link on MyStore Page*********
+2021-08-20 20:35:34 INFO  Steps:58 - *********Verifying Page Navigation*********
+2021-08-20 20:35:34 INFO  Steps:66 - *********Entering Username*********
+2021-08-20 20:35:36 INFO  Steps:68 - *********Entering Password*********
+2021-08-20 20:35:36 INFO  Steps:75 - *********Clicking SignIn button on Login page*********
+2021-08-20 20:35:39 INFO  Steps:58 - *********Verifying Page Navigation*********
+2021-08-20 20:35:39 INFO  Steps:83 - *********Validating Account Information page*********
+2021-08-20 20:35:39 INFO  Steps:90 - *********Clicking SignOut Link on the Account page*********
+2021-08-20 20:35:43 INFO  Steps:58 - *********Verifying Page Navigation*********
+2021-08-20 20:35:43 INFO  Steps:97 - *********Closing Browser*********
+2021-08-20 20:35:44 INFO  Steps:33 - *********Opening Blank Browser*********
+2021-08-20 20:35:49 INFO  Steps:43 - *********Navigating to Application URL*********
+2021-08-20 20:36:00 INFO  Steps:51 - *********Clicking SignIn Link on MyStore Page*********
+2021-08-20 20:36:08 INFO  Steps:58 - *********Verifying Page Navigation*********
+2021-08-20 20:36:08 INFO  Steps:66 - *********Entering Username*********
+2021-08-20 20:36:09 INFO  Steps:68 - *********Entering Password*********
+2021-08-20 20:36:10 INFO  Steps:75 - *********Clicking SignIn button on Login page*********
+2021-08-20 20:36:13 INFO  Steps:58 - *********Verifying Page Navigation*********
+2021-08-20 20:36:13 INFO  Steps:83 - *********Validating Account Information page*********
+2021-08-20 20:36:13 INFO  Steps:90 - *********Clicking SignOut Link on the Account page*********
+2021-08-20 20:36:17 INFO  Steps:58 - *********Verifying Page Navigation*********
+2021-08-20 20:36:17 INFO  Steps:97 - *********Closing Browser*********
