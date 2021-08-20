@@ -46,6 +46,7 @@ public class LoginPage extends BasePage{
 	}
 	
 	public void enterUsername(String uName) {
+		explicityWaitForElement(getUsernameWb(), explicitWaitTime);
 		getUsernameWb().sendKeys(uName);
 	}
 	
@@ -54,6 +55,7 @@ public class LoginPage extends BasePage{
 	}
 	
 	public void clickSignInButton() {
+		explicityWaitForElement(getSubmitLoginWb(), explicitWaitTime);
 		getSubmitLoginWb().click();
 	}
 }
